@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilosFormulario.css">
+    <title>Contactos</title>
+</head>
+
+<body>
+    <form action="formsubmit.co/tynnajar@gmail.com" method="post">
+
+     <div class ="contenedor">
+        <header>
+            <h1> Contactos</h1>
+        </header>
+
+        <div class = "nombre">
+        <label for="">Nombre</label>
+        <input type="text" id="nombre"
+         placeholder="Escribe tu nombre aqui" required> <br>
+        </div>   
+
+        <div class ="fechaNacimiento">
+             <label for="">Fecha de Nacimiento</label>
+             <input type="date" name="fechaNac" id="fechaNac" required>
+             <br>
+        </div>
+        <div class="sexo">
+            <label for="">Sexo</label>
+            <li>
+            <input type="radio" name="masculino" id="masculino">
+            <label for="">Masculino</label>
+            <input type="radio" name="femenino" id="femenino" >
+            <label for="">Femenino</label>
+        </li>
+        </div>
+        <div class="lugarNacimiento">
+          <label for="">Lugar de Nacimiento</label>
+          <select name="lugNac" id="lugNac">
+             <option value="Sinaloa">Sinaloa</option>
+             <option value="Sonora">Sonora</option>
+             <option value="Nayarit">Nayarit</option>
+             <option value="Durango">Durango</option>
+             <option value="Baja California">Baja California</option>
+
+          </select>  
+
+        </div>
+      <div class="poblacion">
+        <label for="">Población</label>
+        <input type="text" id="poblacion" name="poblacion" required>
+      </div>
+
+      <div class ="idiomas">
+        <label for="">Idiomas</label><br>
+        <li>
+        <input type="checkbox" name="español" id="español">
+        <label for="">Español</label>
+        <input type="checkbox" name="ingles" id="ingles">
+        <label for="">Ingles</label>
+        <input type="checkbox" name="frances" id="frances">
+        <label for="">Frances</label>
+        </li>
+
+      </div>
+
+      <input type="email" name="correo" id="correo" 
+      placeholder="Escribe aqui tu email" required class="correo">
+      
+      <div class="egresoPrimaria">
+        <label for="">Mes y Año de egreso de Primaria</label><br><br>
+        <input type="month" name="egreso" id="egreso" required>
+
+      </div> 
+    <div class = "habitos">
+        <label for="">Habitos Personales</label><br>
+        <textarea name="habitos" id="habitos" cols="30" 
+        rows="10" required placeholder="Escribe aqui tus habitos">
+
+        </textarea>
+
+    </div>
+
+    <div class="ingresos">
+        <label for="">Nivel de ingresos</label>
+        <input type="range" name="ingresos" id="ingresos"
+         value="25000" list="ingresosList">
+         <datalist id="ingresosList">
+            <option value="5000"></option>
+            <option value="10000"></option>
+            <option value="15000"></option>
+            <option value="20000"></option>
+            <option value="25000"></option>
+            <option value="30000"></option>
+            <option value="35000"></option>
+            <option value="40000"></option>
+            <option value="45000"></option>
+            <option value="50000"></option>
+            <option value="55000"></option>
+
+         </datalist>
+         <label for="ingresosList">5000 10000 15000 20000 25000 30000 35000 40000 45000 50000 55000</label>
+    </div>
+     <div class = "horario">
+            <label for="">Horario disponible De</label><br>
+            <input type="time" name="entrada" id="entrada" required> A
+            <input type="time" name="salida" id="salida" required>
+
+     </div>
+     </div>
+
+<input type="submit" value="Enviar Informacion" id="botones">
+<input type="reset" value="Limpiar el Formulario" id="botones">
+
+    </form>
+    
+</body>
+</html>
